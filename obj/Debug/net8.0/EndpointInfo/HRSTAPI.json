@@ -1,0 +1,687 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "HRSTAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/HrstDetail": {
+      "get": {
+        "tags": [
+          "HrstDetail"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HrstDetail"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HrstDetail"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HrstDetail"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HrstDetail"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HrstDetail"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HrstDetail"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HrstDetail"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HrstDetail"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HrstDetail"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HrstDetail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HrstDetail/{id}": {
+      "get": {
+        "tags": [
+          "HrstDetail"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HrstDetail"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HrstDetail"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HrstDetail"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HrstDetail"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HrstDetail"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HrstDetail"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HrstDetail"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HrstDetail"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/LookUp": {
+      "get": {
+        "tags": [
+          "LookUp"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LookUp"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LookUp"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LookUp"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LookUp"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LookUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LookUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LookUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LookUp"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LookUp"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LookUp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LookUp/{id}": {
+      "get": {
+        "tags": [
+          "LookUp"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LookUp"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LookUp"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LookUp"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LookUp"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LookUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LookUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LookUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LookUp"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HrstDetail": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "serialNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "screenedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mrn": {
+            "type": "string",
+            "nullable": true
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "knownHIVPositive": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "patientOnART": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "behavioralRisk": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unprotectedSex": {
+            "type": "boolean"
+          },
+          "partnerofKnownHIVPositive": {
+            "type": "boolean"
+          },
+          "multipleSexualPartners": {
+            "type": "boolean"
+          },
+          "sexWithNonRegularPartner": {
+            "type": "boolean"
+          },
+          "exchangedSexForMoney": {
+            "type": "boolean"
+          },
+          "sexualPracticeUnderInfluence": {
+            "type": "boolean"
+          },
+          "needleSharingforInjection": {
+            "type": "boolean"
+          },
+          "historyofSexualViolence": {
+            "type": "boolean"
+          },
+          "stiHistory": {
+            "type": "boolean"
+          },
+          "otherBehavioralRiks": {
+            "type": "boolean"
+          },
+          "behavioralRiskOther": {
+            "type": "string",
+            "nullable": true
+          },
+          "clinicalSign": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "persistentGeneralizedLymphadenopathy": {
+            "type": "boolean"
+          },
+          "unexplainedWeightLoss": {
+            "type": "boolean"
+          },
+          "unexplainedPersistentHepatosplenomegaly": {
+            "type": "boolean"
+          },
+          "unexplainedChronicDiarrhea": {
+            "type": "boolean"
+          },
+          "recurrentRespiratoryTractInfections": {
+            "type": "boolean"
+          },
+          "recurrentSevereBacterialInfections": {
+            "type": "boolean"
+          },
+          "oralUlceration": {
+            "type": "boolean"
+          },
+          "esophagealCandidiasis": {
+            "type": "boolean"
+          },
+          "skinRelatedProblem": {
+            "type": "boolean"
+          },
+          "sti": {
+            "type": "boolean"
+          },
+          "herpesZoster": {
+            "type": "boolean"
+          },
+          "kaposiSarcoma": {
+            "type": "boolean"
+          },
+          "pcp": {
+            "type": "boolean"
+          },
+          "presumptiveTBConfirmedTB": {
+            "type": "boolean"
+          },
+          "cmvInfections": {
+            "type": "boolean"
+          },
+          "cnsRelatedInfectionsLymphoma": {
+            "type": "boolean"
+          },
+          "cervicalCarcinoma": {
+            "type": "boolean"
+          },
+          "leishmaniosis": {
+            "type": "boolean"
+          },
+          "unexplainedPersistentFever": {
+            "type": "boolean"
+          },
+          "otherSign": {
+            "type": "boolean"
+          },
+          "clinicalSignOther": {
+            "type": "string",
+            "nullable": true
+          },
+          "womenEngagedCommercialSex": {
+            "type": "boolean"
+          },
+          "sexualPartnerPLHIV": {
+            "type": "boolean"
+          },
+          "divorcedWidowWidower": {
+            "type": "boolean"
+          },
+          "pwid": {
+            "type": "boolean"
+          },
+          "prisoners": {
+            "type": "boolean"
+          },
+          "longDistanceDriver": {
+            "type": "boolean"
+          },
+          "workersHotSpotArea": {
+            "type": "boolean"
+          },
+          "highRiskAdolescentGirlYoungWomen": {
+            "type": "boolean"
+          },
+          "otherPatientGroup": {
+            "type": "boolean"
+          },
+          "patientGroupOther": {
+            "type": "string",
+            "nullable": true
+          },
+          "eligibleForTesting": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "receivedHIVTestSameDate": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "receivedHIVTestSameDateOther": {
+            "type": "string",
+            "nullable": true
+          },
+          "reason": {
+            "type": "string",
+            "nullable": true
+          },
+          "hivTestResult": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "escortedForLinkage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LookUp": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

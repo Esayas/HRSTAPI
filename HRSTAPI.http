@@ -1,0 +1,6 @@
+@HRSTAPI_HostAddress = http://localhost:5232
+
+GET {{HRSTAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
