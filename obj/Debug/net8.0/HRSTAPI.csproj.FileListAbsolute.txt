@@ -9,6 +9,9 @@ F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\HRSTAPI.pdb
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Azure.Core.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Azure.Identity.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Humanizer.dll
+F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Build.dll
@@ -40,6 +43,8 @@ F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.C
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
@@ -270,6 +275,7 @@ F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\HRSTAPI.AssemblyInfo.c
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\HRSTAPI.csproj.CoreCompileInputs.cache
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\HRSTAPI.MvcApplicationPartsAssemblyInfo.cs
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\HRSTAPI.MvcApplicationPartsAssemblyInfo.cache
+F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\HRSTAPI.sourcelink.json
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

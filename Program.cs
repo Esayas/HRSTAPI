@@ -1,5 +1,8 @@
-using HRSTAPI.Models;
+﻿using HRSTAPI.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +14,25 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//builder.Services.AddIdentityApiEndpoints<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireLowercase = false;
+    options.User.RequireUniqueEmail = true;
+});
+
 builder.Services.AddDbContext<HrstContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+
+// Register Identity with HrstContext
+builder.Services.AddIdentityApiEndpoints<AppUser>()
+    .AddEntityFrameworkStores<HrstContext>();
 
 var app = builder.Build();
 
@@ -28,8 +48,84 @@ options.WithOrigins("http://localhost:4200")
 .AllowAnyMethod()
 .AllowAnyHeader());
 
+//app.UseAuthentication(); // ✅ Important
 app.UseAuthorization();
 
 app.MapControllers();
 
+// Expose Identity endpoints like /register, /login, etc.
+
+app.MapGroup("/api").MapIdentityApi<AppUser>();
+
+app.MapPost("/api/signup", async (
+    UserManager<AppUser> UserManager,
+    [FromBody] UserRegistrationModel userRegistrationModel
+    ) =>
+{
+    AppUser user = new AppUser()
+    {
+        UserName = userRegistrationModel.Email,
+        Email = userRegistrationModel.Email,
+        FullName = userRegistrationModel.FullName
+
+    };
+    var result = await UserManager.CreateAsync(user, userRegistrationModel.Password);
+
+    if (result.Succeeded)
+        return Results.Ok(result);
+    else
+        return Results.BadRequest(result);
+
+});
+
+//app.MapPost("/api/signin", async (
+//     UserManager<AppUser> userManager,
+//    [FromBody] LoginModel loginModel) =>
+//{
+//    var user = await userManager.FindByEmailAsync(loginModel.Email);
+//    if (user != null && await userManager.CheckPasswordAsync(user, loginModel.Password))
+//    {
+//        var signInKey = new SymmetricSecurityKey(
+//                                    Encoding.UTF8.GetBytes(
+//                                        builder.Configuration["AppSettings:JWTSecret"]!));
+
+//        var tokenDescriptor = new SecurityTokenDescriptor
+//        {
+//            Subject = new System.Security.Claims.ClaimsIdentity(new Claim[]
+//            {
+//                new Claim("UserID",user.Id.ToString())
+//            }),
+//            Expires = DateTime.UtcNow.AddDays(10),
+//            SigningCredentials = new SigningCredentials(
+//                signInKey,
+//                SecurityAlgorithms.HmacSha256Signature
+//                )
+//        };
+//        var tokenHandler = new JwtSecurityTokenHandler();
+//        var securityToken = tokenHandler.CreateToken(tokenDescriptor);
+//        var token = tokenHandler.WriteToken(securityToken);
+//        return Results.Ok(new { token });
+
+
+//    }
+//    else
+//    {
+//        return Results.BadRequest(new { Message = "Username or password is incorrect" });
+//    }
+//});
+
 app.Run();
+
+public class UserRegistrationModel
+{
+    public string Email { get; set; } = "";
+    public string Password { get; set; } = "";
+    public string FullName { get; set; } = "";
+}
+
+public class LoginModel
+{
+    public string Email { get; set; } = "";
+    public string Password { get; set; } = "";
+
+}
