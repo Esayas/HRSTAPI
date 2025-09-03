@@ -520,8 +520,8 @@
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__6",
+    "ContainingType": "HRSTAPI.Controllers.IdentityUserEndpoints",
+    "Method": "SignIn",
     "RelativePath": "api/signin",
     "HttpMethod": "POST",
     "IsController": false,
@@ -529,7 +529,7 @@
     "Parameters": [
       {
         "Name": "loginModel",
-        "Type": "LoginModel",
+        "Type": "HRSTAPI.Controllers.LoginModel",
         "IsRequired": true
       }
     ],
@@ -542,8 +542,8 @@
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
+    "ContainingType": "HRSTAPI.Controllers.IdentityUserEndpoints",
+    "Method": "CreateUser",
     "RelativePath": "api/signup",
     "HttpMethod": "POST",
     "IsController": false,
@@ -551,7 +551,7 @@
     "Parameters": [
       {
         "Name": "userRegistrationModel",
-        "Type": "UserRegistrationModel",
+        "Type": "HRSTAPI.Controllers.UserRegistrationModel",
         "IsRequired": true
       }
     ],
