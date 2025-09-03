@@ -291,3 +291,4 @@ F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\refint\HRSTAPI.dll
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\HRSTAPI.pdb
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\HRSTAPI.genruntimeconfig.cache
 F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\obj\Debug\net8.0\ref\HRSTAPI.dll
+F:\Angular Projects\HRST\HRSTAPI\HRSTAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
