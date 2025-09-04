@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HRSTAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8f7da160f2a5a4aa0b1379df422273055b7712c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ad439f4662a69fff4cb3070d6a082d10deb5cdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("HRSTAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HRSTAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

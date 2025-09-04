@@ -14,5 +14,6 @@ namespace HRSTAPI.Models
         public DbSet<HrstDetail> HrstDetails { get; set; }
         public DbSet<LookUp> LookUps { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<Facility> Facilities { get; set; }
     }
 }

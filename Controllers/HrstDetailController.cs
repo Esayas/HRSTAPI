@@ -41,6 +41,22 @@ namespace HRSTAPI.Controllers
             return hrstDetail;
         }
 
+        // GET: api/HrstDetail/user/email@example.com
+        [HttpGet("user/{createdBy}")]
+        public async Task<ActionResult<IEnumerable<HrstDetail>>> GetHrstByUser(string createdBy)
+        {
+            var hrstDetails = await _context.HrstDetails
+                .Where(h => h.CreatedBy == createdBy)
+                .ToListAsync();
+
+            if (hrstDetails == null || !hrstDetails.Any())
+            {
+                return NotFound();
+            }
+
+            return hrstDetails;
+        }
+
         // PUT: api/HrstDetail/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
